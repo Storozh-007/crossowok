@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* base */
+body {
+    @apply bg-brand-white text-brand-black antialiased overflow-x-hidden;
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Syne', system-ui, sans-serif;
+}
+
+/* utils */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* selection */
+::selection {
+    background-color: #FF3300;
+    color: #ffffff;
+}
+
+/* outline text */
+.stroke-text {
+    -webkit-text-stroke: 1px #050505;
+    color: transparent;
+}
